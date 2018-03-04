@@ -71,11 +71,34 @@ a:active {
 	color: black;
 }
 
+.backbtn {
+	position:absolute;
+    top:3%;
+    left: 3%;
+
+}
+
+#imgview {
+	background-color: #41A3D2;
+}
+
+.backdiv {
+	margin-bottom: 5%;
+}
+
+#main {
+	text-align: center;
+}
+
+#main img {
+	vertical-align: middle;
+}
+
 .tl { position: absolute; top: 0; left: 0; right: 60%; bottom: 50%; 
-      background: red; /*border:solid #000; border-width: 0 10px 0 0;*/ }
+      background: #41A3D2  ; border:solid #000; border-width: 0 thin thin 0;	 }
 .tr { position: absolute; top: 0; left: 40%; right: 20%; bottom: 50%; 
-      background: blue; /*border:solid #000; border-width: 0 10px 0 0;*/ }
+      background: #41A3D2  ; border:solid #000; border-width: 0 0 thin thin; }
 .bl { position: absolute; top: 50%; left: 0; right: 60%; bottom: 0; 
-      background: orange; /*border:solid #000; border-width: 0 10px 0 0;*/ }
+      background: #41A3D2  ; border:solid #000; border-width: thin thin 0 0;	 }
 .br { position: absolute; top: 50%; left: 40%; right: 20%; bottom: 0; 
-      background: magenta; } 
+      background: #41A3D2 ; border: solid #000; border-width: thin 0 0 thin } 

@@ -1,0 +1,59 @@
+/* #image{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+} */
+
+/* div {
+  position: absolute;
+  bottom:0;
+  object-fit: fill;
+} */
+
+div.name{
+	font-size: 2em;
+	text-align: center;
+}
+
+.name{
+	height: 2em;
+}
+
+div.phone{
+	font-size: 2em;
+}
+
+.num{
+	height: 2em;
+}
+
+a:link {
+	color: white;
+}
+
+a:visited {
+	color: white;
+}
+
+a:hover {
+	color: black;
+}
+
+a:active {
+	color: black;
+}
+
+img {
+  width:100%;
+  height: 46%;
+  bottom: 0;
+  position: absolute;
+  display: block;
+  float: left;
+}
+
+body {
+  overflow: hidden;
+  font-family: sans-serif;
+  background-color: #41A3D2;
+}

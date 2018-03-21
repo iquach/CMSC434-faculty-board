@@ -1,8 +1,8 @@
 #sidebar {
     position: fixed;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
     width: 20%;
     background-color: #5bc446;
 }
@@ -30,7 +30,7 @@
 
 .cal-event {
 	margin-top: 5%;
-	margin-bottom: 5%;	
+	margin-bottom: 5%;
 	border-top: 3px solid white;
 	border-bottom: 3px solid white;
 	margin-bottom: 10px;
@@ -75,7 +75,6 @@ a:active {
 	position:absolute;
     top:3%;
     left: 3%;
-
 }
 
 #imgview {
@@ -86,6 +85,10 @@ a:active {
 	margin-bottom: 5%;
 }
 
+body {
+  overflow: hidden;
+}
+
 #main {
 	text-align: center;
 }
@@ -94,11 +97,11 @@ a:active {
 	vertical-align: middle;
 }
 
-.tl { position: absolute; top: 0; left: 0; right: 60%; bottom: 50%; 
+.tl { position: absolute; top: 0; left: 0; right: 60%; bottom: 50%;
       background: #41A3D2  ; border:solid #000; border-width: 0 thin thin 0;	 }
-.tr { position: absolute; top: 0; left: 40%; right: 20%; bottom: 50%; 
+.tr { position: absolute; top: 0; left: 40%; right: 20%; bottom: 50%;
       background: #41A3D2  ; border:solid #000; border-width: 0 0 thin thin; }
-.bl { position: absolute; top: 50%; left: 0; right: 60%; bottom: 0; 
+.bl { position: absolute; top: 50%; left: 0; right: 60%; bottom: 0;
       background: #41A3D2  ; border:solid #000; border-width: thin thin 0 0;	 }
-.br { position: absolute; top: 50%; left: 40%; right: 20%; bottom: 0; 
-      background: #41A3D2 ; border: solid #000; border-width: thin 0 0 thin } 
+.br { position: absolute; top: 50%; left: 40%; right: 20%; bottom: 0;
+      background: #41A3D2 ; border: solid #000; border-width: thin 0 0 thin }

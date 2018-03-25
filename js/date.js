@@ -9,5 +9,5 @@ var today = new Date();
 	if(mm<10){
 	    mm='0'+mm;
 	} 
-	var today = dd+'/'+mm+'/'+yyyy;
+	var today = mm+'/'+dd+'/'+yyyy;
 	document.getElementById('date').innerHTML = today;

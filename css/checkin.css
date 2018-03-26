@@ -1,15 +1,3 @@
-/* #image{
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-} */
-
-/* div {
-  position: absolute;
-  bottom:0;
-  object-fit: fill;
-} */
-
 div.name{
 	font-size: 2em;
 	text-align: center;
@@ -25,6 +13,12 @@ div.phone{
 
 .num{
 	height: 2em;
+}
+
+a,u {
+	text-decoration: none;
+	font-size: 3em;
+	font-family: sans-serif;
 }
 
 a:link {

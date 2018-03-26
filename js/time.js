@@ -11,7 +11,11 @@ function startTime() {
 	  var m = today.getMinutes();
 	  var ampm = h < 12 ? " AM" : " PM";
 	  m = checkTime(m);
-	  document.getElementById('time').innerHTML = (h%12) + ":" + m + ampm;
+	  if (h > 12) {
+	  	document.getElementById('time').innerHTML = (h%12) + ":" + m + ampm;
+	  } else {
+	  	document.getElementById('time').innerHTML = h + ":" + m + ampm;
+	  }
 	  t = setTimeout(function() {
 	    startTime()
 	  }, 500);

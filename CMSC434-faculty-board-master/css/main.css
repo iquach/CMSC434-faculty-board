@@ -1,0 +1,107 @@
+#sidebar {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    width: 20%;
+    background-color: #5bc446;
+}
+
+#time {
+	font-size: 3em;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+#date {
+	font-size: 2em;
+	font-family: sans-serif;
+	margin-left: 15%;
+	margin-right: 20%;
+}
+
+.center-horiz {
+	text-align: center;
+}
+
+.white {
+	color:white;
+}
+
+.cal-event {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+	margin-bottom: 10px;
+	font-family: sans-serif;
+}
+
+.fill-div {
+    display:inline-block;
+    width:100%;
+    height:100%;
+    text-align: center;
+}
+
+.center-link {
+	position: relative;
+	padding-top: 20%;
+}
+
+a,u {
+	text-decoration: none;
+	font-size: 3em;
+	font-family: sans-serif;
+}
+
+a:link {
+	color: white;
+}
+
+a:visited {
+	color: white;
+}
+
+a:hover {
+	color: black;
+}
+
+a:active {
+	color: black;
+}
+
+.backbtn {
+	position:absolute;
+    top:3%;
+    left: 3%;
+}
+
+#imgview {
+	background-color: #41A3D2;
+}
+
+.backdiv {
+	margin-bottom: 10%;
+}
+
+body {
+  overflow: hidden;
+}
+
+#main {
+	text-align: center;
+}
+
+#main img {
+	vertical-align: middle;
+}
+
+.tl { position: absolute; top: 0; left: 0; right: 60%; bottom: 50%;
+      background: #41A3D2  ; border:solid #000; border-width: 0 thin thin 0;	 }
+.tr { position: absolute; top: 0; left: 40%; right: 20%; bottom: 50%;
+      background: #41A3D2  ; border:solid #000; border-width: 0 0 thin thin; }
+.bl { position: absolute; top: 50%; left: 0; right: 60%; bottom: 0;
+      background: #41A3D2  ; border:solid #000; border-width: thin thin 0 0;	 }
+.br { position: absolute; top: 50%; left: 40%; right: 20%; bottom: 0;
+      background: #41A3D2 ; border: solid #000; border-width: thin 0 0 thin }

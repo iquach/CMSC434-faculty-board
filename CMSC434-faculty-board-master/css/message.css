@@ -1,0 +1,58 @@
+div.info{
+  text-align: center;
+  font-size: 2em;
+}
+.name{
+  height: 2em;
+  margin-right: 5em;
+}
+.email{
+  height: 2em;
+}
+
+div.header{
+  text-align: center;
+  font-size: 2.5em;
+}
+
+div.message{
+  text-align: center;
+  font-size: 2em;
+}
+
+body {
+  overflow: hidden;
+  font-family: sans-serif;
+  background-color: #41A3D2;
+}
+
+a,u {
+	text-decoration: none;
+	font-size: 3em;
+	font-family: sans-serif;
+}
+
+img {
+  width:100%;
+  height: 46%;
+  bottom: 0;
+  position: absolute;
+  display: block;
+  float: left;
+}
+
+a:link {
+	color: white;
+}
+
+a:visited {
+	color: white;
+}
+
+a:hover {
+	color: black;
+}
+
+a:active {
+	color: black;
+}

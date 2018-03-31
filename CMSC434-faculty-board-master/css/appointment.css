@@ -1,0 +1,58 @@
+a {
+	text-decoration: none;
+	font-size: 1em;
+	font-family: sans-serif;
+}
+
+#back {
+	font-size: 3em;
+}
+
+a:link {
+	color: white;
+}
+
+a:visited {
+	color: white;
+}
+
+a:hover {
+	color: black;
+}
+
+a:active {
+	color: black;
+}
+
+.backbtn {
+	position:absolute;
+    top:3%;
+    left: 3%;
+}
+
+.backdiv {
+	margin-bottom: 5%;
+}
+
+body {
+	background: #41A3D2  ;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+h1 {
+	font-family: sans-serif;
+}
+
+.horiz {
+	display: inline-block;
+}
+
+img {
+  width:100%;
+  height: 46%;
+  bottom: 0;
+  position: absolute;
+  display: block;
+  float: left;
+}

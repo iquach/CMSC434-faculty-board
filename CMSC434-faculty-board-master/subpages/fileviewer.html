@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>View Comic.jpg</title>
+	<link href="../css/imageviewer.css"  rel="stylesheet" type="text/css" />
+	<script src="../js/jquery.min.js"></script> 
+	<script src="../js/imageviewer.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</head>
+<body id="imgview">
+	<div class="backdiv">
+		<a class="backbtn" href="../index.html"><i class="fas fa-arrow-left"></i></a>
+	</div>
+	
+	<div id="main">
+		<img src="../img/dilbert.jpg" data-high-res-src="../img/dilbert.jpg" alt="" class="pannable-image">
+	</div>
+</body>
+	<script type="text/javascript">
+		$(function () {
+    		$('.pannable-image').ImageViewer();
+		});
+	</script>
+</html>

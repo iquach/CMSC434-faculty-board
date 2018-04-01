@@ -41,6 +41,12 @@ img {
   float: left;
 }
 
+.backbtn {
+	position:absolute;
+	top: 3%;
+	left: 3%;
+}
+
 a:link {
 	color: white;
 }

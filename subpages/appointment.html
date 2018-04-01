@@ -14,25 +14,18 @@
 	<div>
 		<form action="confirmappt.html">
 			<h1>Set Appointment</h1> <br>
-			<!--
 			<div>
-				<hr>
-				<h2 id="currselection">Selected:</h2>
-				<hr>
-			</div>
-			<br><br> -->
-			<div>
-				<label for="name">Name:</label><input type="text" value="Patrick Star" name="name">
-				<label for="email">Email:</label> <input type="email" value="pat@star.com" name="email">
+				<label for="name">Name:</label><input type="text" value="Patrick Star" name="name" class="name">
+				<label for="email">Email:</label> <input type="email" value="pat@star.com" name="email" class="email">
 			</div>
 
 			<div class="horiz">
-				<h2>Date Selection: </h2><br>
-				<input type="date" value="2018-05-20" name="date" required>
+				<h2>Date Selection: </h2>
+				<input type="date" value="2018-05-20" name="date" required><br><br>
 			</div>
 
 			<div class="horiz">
-				<h2>Reason For Visit:</h2> <br>
+				<h2 style="padding-left:1em">Reason For Visit:</h2>
 				<textarea>Jellyfish Hunting</textarea>
 			</div>
 
@@ -47,9 +40,7 @@
 
 	</div>
 
-
-
-	<script src="../js/jquery.min.js"></script> 
+	<script src="../js/jquery.min.js"></script>
 	<script src="../js/timepicker.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
@@ -67,7 +58,6 @@
 		    dynamic: false,
 		    dropdown: true,
 		    scrollbar: false
-
 		});
 
 	</script>

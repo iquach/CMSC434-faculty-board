@@ -37,6 +37,12 @@ a:active {
 	color: black;
 }
 
+.backbtn {
+	position:absolute;
+	top: 3%;
+	left: 3%;
+}
+
 img {
   width:100%;
   height: 46%;

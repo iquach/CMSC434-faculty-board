@@ -8,6 +8,10 @@ a {
 	font-size: 3em;
 }
 
+.name{
+	margin-right:5em;
+}
+
 a:link {
 	color: white;
 }

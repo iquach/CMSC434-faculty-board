@@ -1,0 +1,88 @@
+
+.navbar2 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 75%;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #5bc446;
+    position: absolute;
+    top: 0;
+    left:75%;
+    width: 25%;
+}
+
+.cont{
+display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.cont a{
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 0px 0px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+#sidebar {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    width: 25%;
+    background-color: #5bc446;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    text-align: center;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #f1f1f1;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+#time {
+
+    text-align: center;
+}
+
+#date {
+    font-size: 2em;
+    font-family: sans-serif;
+    margin-left: 15%;
+    margin-right: 20%;
+}
+.cal-event {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}

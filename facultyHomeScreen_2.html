@@ -5,6 +5,8 @@
     <link rel="stylesheet" type="text/css" href="css/facultyhome2.css">
 </head>
 <body>
+	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script-->
+
 <!--img src='img/mid_avatar.png' style='position:absolute; top:0; left:0;' width='100' height='100' alt='' /-->
 
 <!--label class="container">Available to Meet
@@ -16,13 +18,14 @@
 	<div id="sidebar">
 		<br><br><br>
 		<img src='img/mid_avatar.png' style='display: block;margin-left: auto; margin-right: auto; width: 50%;' width='100' height='100' alt='' />
-		<p id="time" class="white">Name: Dilbert Dilbertson</p>
+		<p id="time" class="white">Welcome, Dilbert Dilbertson!</p>
 		<p id="time" class="white">Logout</p>
 		<ul>
   <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">Messages (1)</a></li>
-  <li><a href="#contact">Preview </a></li>
-  <li><a href="#about">About</a></li>
+  <li><a href="#news">View Messages (1)</a></li>
+  <li><a href="#contact">View Current Visitor Display</a></li>
+  <li><a href="#news">Upload Schedule and Link Calendar</a></li>
+  
   <br><br><br><br><br><br><br><br><br><br><br><br>
   <span id="queue">Queue: _ visitors</span>
   <br>
@@ -37,6 +40,30 @@
 <div class="navbar2">
 <span class="cont" style="float:left; text-align: left">Room Status: Busy</span>
 </div>
+
+	<div class="tl">
+		<a class="fill-div center-link" href="subpages/checkin.html">__ Visitors Outside Room (in the Queue)</a>
+	</div>
+	<div class="tr">
+		<a class="fill-div center-link" href="subpages/appointment.html"> Appointments <br><br>
+			[] Allow visitors to set appointments
+		</a>
+		
+	</div>	
+	<div class="bl">
+		<a class="fill-div center-link" href="subpages/message.html">Messages<br><br>
+			[] Allow visitors to leave messages
+		</a>
+	</div>
+	<div class="br">
+		<a class="fill-div center-link" href="subpages/fileviewer.html">Upload File or Text Announcement<br><br>
+		(show current file and a change button)<br>
+		[] Text announcement<br>
+			Name for announcement:____<br>
+		[] File<br>
+			Name for file:_____</a>
+
+	</div>
 
 <!--div style="text-align: center;">
     <a href="subpages/edit.html"><button class="button" style="vertical-align:middle"><span>Edit </span></button></a> <br>

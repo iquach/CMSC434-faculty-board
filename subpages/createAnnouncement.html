@@ -2,17 +2,17 @@
 <html>
 <head>
 	<title>Faculty Screen</title>
-	<link rel="stylesheet" type="text/css" href="css/facultyhome2.css">
+	<link rel="stylesheet" type="text/css" href="../css/createAnnouncement.css">
 </head>
 <body>
 
 <div id="sidebar">
 	<br><br><br>
-	<img src='img/mid_avatar.png' style='display: block;margin-left: auto; margin-right: auto;border-radius: 50%;' width='100' height='100' alt='' />
+	<img src='../img/mid_avatar.png' style='display: block;margin-left: auto; margin-right: auto;border-radius: 50%;' width='100' height='100' alt='' />
 	<p id="time" class="white">Welcome, Dilbert Dilbertson!</p>
 	<p id="time" class="white">Logout</p>
 	<ul>
-		<li><a class="active" href="facultyHomeScreen.html">Home</a></li>
+		<li><a class="active" href="../facultyHomeScreen.html">Home</a></li>
 		<li><a href="subpages/messages.html">View Messages (1)</a></li>
 		<li><a href="#contact">View Current Visitor Display</a></li>
 		<li><a href="#news">Upload Schedule and Link Calendar</a></li>
@@ -39,33 +39,16 @@
 	<span class="cont" id="roomStatus" style="float:left; text-align: left">Room Status: Busy</span>
 </div>
 
-<div class="tl">
-	<a class="fill-div center-link"><span id="queue2">5</span> Visitors Outside Room (in the Queue)</a>
-</div>
-<div class="tr">
-	<a class="fill-div center-link"> Appointments <br><br>
-		<input type="checkbox" name="option2" value="Appointment"> Allow visitors to set appointments
-	</a>
-
-</div>	
-<div class="bl">
-	<a class="fill-div center-link">Messages<br><br>
-		<input type="checkbox" name="option2" value="Appointment"> Allow visitors to leave messages
-	</a>
-</div>
 <div class="br">
-	<a class="fill-div center-link">Upload File or Text Announcement<br><br>
-		<span>
-		No files or text announcements uploaded<br>
-		Currently: __.jpg uploaded as '__'  <br>
-		<form action="subpages/uploadFile.html">
-			<button id="uploadFileButton">Upload new file</button> 
-		</form>
-		<br>
-		<form action="subpages/createAnnouncement.html">
-			<button id="createAnnButton">Create a new text announcement</button> 
+	<a class="fill-div center-link">Create a Text Announcement<br><br>
+		<span> 
+		Name: <input id="fileName" name="submitName" type="susbmit" value="ex: 'Announcement 3/18'"> <br><br>
+		    <textarea rows="20" cols="100"></textarea>
+		<form action="">
+			<button id="">Post Announcement</button> 
 		</form>
 
+	
 		</span>
 		</a>
 		

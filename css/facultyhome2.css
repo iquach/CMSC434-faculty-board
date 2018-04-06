@@ -107,9 +107,9 @@ a {
     font-family: sans-serif;
 }
 
-.tl { position: fixed; top: 6.5%; left: 0; right: 62.5%; bottom: 46.75%;
+.tl { position: fixed; top: 6.8%; left: 0; right: 62.5%; bottom: 46.75%;
       background: #41A3D2  ; border:solid #000; border-width: 0 thin thin 0;     }
-.tr { position: fixed; top: 6.5%; left: 37.5%; right: 25%; bottom: 46.75%;
+.tr { position: fixed; top: 6.8%; left: 37.5%; right: 25%; bottom: 46.75%;
       background: #41A3D2  ; border:solid #000; border-width: 0 0 thin thin; }
 .bl { position: fixed; top: 53.25%; left: 0; right: 62.50%; bottom: 0;
       background: #41A3D2  ; border:solid #000; border-width: thin thin 0 0;     }
@@ -128,4 +128,43 @@ a {
 .center-link {
     position: relative;
     padding-top: 20%;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    margin: 70;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 45%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }

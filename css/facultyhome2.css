@@ -2,7 +2,9 @@ body{
 
 }
 
-
+#queueSpace {
+    padding-top: 30%;
+}
 
 .navbar2 {
     list-style-type: none;
@@ -88,7 +90,7 @@ a {
 }
 
 #time {
-
+    color: white;
     text-align: center;
 }
 
@@ -108,13 +110,13 @@ a {
 }
 
 .tl { position: fixed; top: 6.8%; left: 0; right: 62.5%; bottom: 46.75%;
-      background: #41A3D2  ; border:solid #000; border-width: 0 thin thin 0;     }
+      background: #41A3D2  ; border:solid #000; border-width: 0 thin thin 0; font-size: 2em;    }
 .tr { position: fixed; top: 6.8%; left: 37.5%; right: 25%; bottom: 46.75%;
-      background: #41A3D2  ; border:solid #000; border-width: 0 0 thin thin; }
+      background: #41A3D2  ; border:solid #000; border-width: 0 0 thin thin; font-size: 2em;}
 .bl { position: fixed; top: 53.25%; left: 0; right: 62.50%; bottom: 0;
-      background: #41A3D2  ; border:solid #000; border-width: thin thin 0 0;     }
+      background: #41A3D2  ; border:solid #000; border-width: thin thin 0 0; font-size: 2em;    }
 .br { position: fixed; top: 53.25%; left: 37.5%; right: 25%; bottom: 0;
-      background: #41A3D2 ; border: solid #000; border-width: thin 0 0 thin }
+      background: #41A3D2 ; border: solid #000; border-width: thin 0 0 thin; font-size: 1.5em; }
 
 .fill-div {
     display:inline-block;
@@ -127,7 +129,7 @@ a {
 
 .center-link {
     position: relative;
-    padding-top: 20%;
+    padding-top: 15%;
 }
 /* The Modal (background) */
 .modal {

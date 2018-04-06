@@ -11,17 +11,23 @@
 	<div id="sidebar">
 		<br><br><br>
 		<img src='img/mid_avatar.png' style='display: block;margin-left: auto; margin-right: auto;border-radius: 50%;' width='100' height='100' alt='' />
+		<br>
 		<p id="time" class="white">Welcome, Dilbert Dilbertson!</p>
 		<p id="time" class="white">Logout</p>
 		<ul>
 			<li><a class="active" href="facultyHomeScreen.html">Home</a></li>
 			<li><a href="subpages/messages.html">View Messages (1)</a></li>
-			<li><a>View Current Visitor Display</a></li>
+			<li><a href="index.html">View Current Visitor Display</a></li>
 			<li><a href="subpages/linkCalendarPage.html">Upload Schedule and Link Calendar</a></li>
-			<br><br><br><br><br><br><br><br><br><br><br><br>
-			<span id="queueMessage" style="font-size:180%">Queue: <span id="queue">5</span> visitors</span>
-			<br>
-			<span style="font-size:120%"><button id="decrement" onclick="decrementQ()">-</button>Decrement Count</span>
+			<div id="queueSpace">
+				<span id="queueMessage" style="font-size:180%">Queue: <span id="queue">5</span> visitors</span>
+				<br>
+				<span style="font-size:120%"><button id="decrement" onclick="decrementQ()">-</button>Modify Count</span>
+				<span style="font-size: 1.2em">
+					<button id="increment" onclick="incrementQ()">+</button>
+				</span>
+			</div>
+			
 		</ul>
 	</div>
 	<div class="navbar">
@@ -38,7 +44,7 @@
 		<span class="cont" id="roomStatus" style="float:left; text-align: left">Room Status: Busy</span>
 	</div>
 	<div class="tl">
-		<a class="fill-div center-link">There are <span id="queue2">5</span> Visitors Outside the Room (in the Queue)</a>
+		<a class="fill-div center-link">There are <span id="queue2">5</span> Visitors Outside<br> (in the Queue)</a>
 	</div>
 	<div class="tr">
 		<a class="fill-div center-link"> Appointments <br><br>
@@ -169,6 +175,14 @@
 			document.getElementById('queue').innerHTML = val;
 			document.getElementById('queue2').innerHTML = val;
 		}
+	}
+
+	function incrementQ() {
+		val = document.getElementById('queue').innerHTML; 
+		val++;
+		document.getElementById('queue').innerHTML = val;
+		document.getElementById('queue2').innerHTML = val;
+		
 	}
 
 	//Get the button that saves the new file info

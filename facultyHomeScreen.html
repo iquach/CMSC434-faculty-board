@@ -39,8 +39,8 @@
 			<!-- Make this select prettier!! incrase size? -->
 			<select onchange="changeRoom(this.value)">
 				<option value="Open">Open</option>
-				<option selected="selected" value="Busy">Busy</option>
-				<option value="Out of Office">Out of Office</option>
+				<option value="Busy">Busy</option>
+				<option selected="selected" value="Out of Office">Out of Office</option>
 			</select>
 		</span>
 	</div>
@@ -154,19 +154,19 @@
 	//Changes the tob bar color 
 	function changeRoom(status){
 		if(status == "Open"){
-			document.getElementById('roomStatus').style.cssText = 'background-color:green	';
-			document.getElementById('makeRoom').style.cssText = 'background-color:green	';
+			document.getElementById('roomStatus').style.cssText = 'background-color:#28B463	';
+			document.getElementById('makeRoom').style.cssText = 'background-color:#28B463	';
 			document.getElementById('roomStatus').innerHTML = "Room Status: Open"
 		}
 		if(status == "Busy"){
 			document.getElementById('roomStatus').style.cssText = 'background-color:orange';
-			document.getElementById('makeRoom').style.cssText = 'background-color:orange';
+			document.getElementById('makeRoom').style.cssText = 'background-color:#28B463';
 
 			document.getElementById('roomStatus').innerHTML = "Room Status: Busy"
 		}
 		if(status == "Out of Office"){
-			document.getElementById('roomStatus').style.cssText = 'background-color:red';
-			document.getElementById('makeRoom').style.cssText = 'background-color:red';
+			document.getElementById('roomStatus').style.cssText = 'background-color:#D84343';
+			document.getElementById('makeRoom').style.cssText = 'background-color:#28B463';
 
 			document.getElementById('roomStatus').innerHTML = "Room Status: Out of Office"
 		}

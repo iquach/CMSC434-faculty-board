@@ -1,113 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Faculty Screen</title>
-	<link rel="stylesheet" type="text/css" href="../css/createAnnouncement.css">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-lite.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-lite.js"></script>
+    <title>checkin</title>
+    <link rel="stylesheet" type="text/css" href="../css/linkCalendarPage.css"/>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
 </head>
+
 <body>
-
-<div id="sidebar">
-	<br><br><br>
-	<img src='../img/mid_avatar.png' style='display: block;margin-left: auto; margin-right: auto;border-radius: 50%;' width='100' height='100' alt='' />
-	<p id="time" class="white">Welcome, Dilbert Dilbertson!</p>
-	<p id="time" class="white">Logout</p>
-	<ul>
-		<li><a class="active" href="../facultyHomeScreen.html">Home</a></li>
-		<li><a href="subpages/messages.html">View Messages (1)</a></li>
-		<li><a href="#contact">View Current Visitor Display</a></li>
-		<li><a href="#news">Upload Schedule and Link Calendar</a></li>
-
-		<br><br><br><br><br><br><br><br><br><br><br><br>
-		<span id="queueMessage" style="font-size:180%">Queue: <span id="queue">5</span> visitors</span>
-		<br>
-		<span style="font-size:120%"><button id="decrement" onclick="decrementQ()">-</button>Decrement Count</span>
-	</ul>
-
-</div>
-<div class="navbar">
-	<span class="cont" id="makeRoom">Make room 
-		<!-- Make this select prettier!! incrase size? -->
-		<select onchange="changeRoom(this.value)">
-			<option value="Open">Open</option>
-			<option selected="selected" value="Busy">Busy</option>
-			<option value="Out of Office">Out of Office</option>
-		</select>
-	</span>
+<div class="backdiv">
+    <a style="text-align:left; float:left;" class="backbtn" href="../facultyHomeScreen.html"><i class="fas fa-arrow-left"></i></a>
 </div>
 
-<div class="navbar2">
-	<span class="cont" id="roomStatus" style="float:left; text-align: left">Room Status: Busy</span>
+<center><h1 style="padding-right:1em">Upload Schedule and Link Calendar</h1></center>
+<div class="info">
+    Upload file (in ics format): <br>
+    or <br>
+    Link your Google calendar: <br>
+    Display preferences <br>
+
 </div>
-
-<div class="br">
-	<a class="fill-div "><br><br><br><br><br>Create a Text Announcement<br><br>
-		<span> 
-		Name: <input id="fileName" name="submitName" type="susbmit" value="ex: 'Announcement 3/18'"> <br><br>
-		    <div align="center">
-		    <div id="summernote"><p></p></div></div>
-  				<script>
-				    $(document).ready(function() {
-				        $('#summernote').summernote({
-				        	width: 700,
-				        	height: 250
-				        });
-				    });
-  				</script>
-
-		<form action="">
-			<button id="">Post Announcement</button> 
-		</form>
-
-	
-		</span>
-		</a>
-		
-
-	</div>
-
-	<br>
-	<br>
-	<br>
-	<script>
-
-	function changeRoom(status){
-		if(status == "Open"){
-			document.getElementById('roomStatus').style.cssText = 'background-color:green	';
-			document.getElementById('makeRoom').style.cssText = 'background-color:green	';
-			document.getElementById('roomStatus').innerHTML = "Room Status: Open"
-		}
-		if(status == "Busy"){
-			document.getElementById('roomStatus').style.cssText = 'background-color:orange';
-			document.getElementById('makeRoom').style.cssText = 'background-color:orange';
-
-			document.getElementById('roomStatus').innerHTML = "Room Status: Busy"
-		}
-		if(status == "Out of Office"){
-			document.getElementById('roomStatus').style.cssText = 'background-color:red';
-			document.getElementById('makeRoom').style.cssText = 'background-color:red';
-
-			document.getElementById('roomStatus').innerHTML = "Room Status: Out of Office"
-		}
-	}
-
-	function decrementQ(){
-		val = document.getElementById('queue').innerHTML; 
-		if(val >0){
-			val--
-			document.getElementById('queue').innerHTML = val;
-			document.getElementById('queue2').innerHTML = val;
-		}
-	}
-
-	function nameFile(){
-
-	}
-	</script>
-	
-
 
 </body>
 </html>

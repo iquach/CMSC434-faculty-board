@@ -1,8 +1,6 @@
 html, body {
-	overflow-y: hidden;
 	font-family: 'Nanum Gothic', sans-serif;
 	color: white;
-
 }
 
 a {
@@ -48,6 +46,7 @@ a:active {
 body {
 	background: #41A3D2;
 	text-align: center;
+	overflow: hidden;
 }
 
 .name,.horiz {

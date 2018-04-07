@@ -1,23 +1,22 @@
 body,html {
 	font-family: 'Nanum Gothic', sans-serif;
-	  color: white;
-
+	 color: white;
 }
 
-div.name{
+h1{
+	text-align: center;
+}
+
+div.name, div.email, div.phone {
 	font-size: 2em;
 	text-align: center;
 }
 
-.name{
+.name {
 	height: 2em;
 }
 
-div.phone{
-	font-size: 2em;
-}
-
-.num{
+.num {
 	height: 2em;
 }
 

@@ -18,8 +18,9 @@ a {
 	font-size: 3em;
 }
 
-.name{
-	margin-right:5em;
+div.name {
+	font-size: 2em;
+	text-align: center;
 }
 
 a:link {
@@ -40,26 +41,22 @@ a:active {
 
 .backbtn {
 	position:absolute;
-    top:3%;
-    left: 3%;
-}
-
-.backdiv {
-	margin-bottom: 5%;
+  top: 3%;
+  left: 3%;
 }
 
 body {
-	background: #41A3D2  ;
+	background: #41A3D2;
 	text-align: center;
 }
 
-.horiz {
+.name,.horiz {
 	display: inline-block;
 }
 
 img {
   width:100%;
-  height: 46%;
+  height: 44%;
   bottom: 0;
 	left: 0;
   position: absolute;

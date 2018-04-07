@@ -9,16 +9,20 @@
 </head>
 <body>
 	<div class="backdiv">
-			<a class="backbtn" id="back" href="../index.html"><i class="fas fa-arrow-left"></i></a>
+			<a style="text-align:left; float:left;" class="backbtn" id="back" href="../index.html"><i class="fas fa-arrow-left"></i></a>
 	</div>
 
 	<div>
 		<form action="confirmappt.html">
-			<h1>Set Appointment</h1> <br>
-			<div>
+			<h1>Set Appointment</h1>
+			<div class="name">
 				<label for="name">Name:</label><input type="text" value="Patrick Star" name="name" class="name">
-				<label for="email">Email:</label> <input type="email" value="pat@star.com" name="email" class="email">
 			</div>
+
+			<div class="name">
+				<label style="padding-left:1em" for="email">Email:</label> <input type="email" value="pat@star.com" name="email" class="email">
+			</div>
+			<br>
 
 			<div class="horiz">
 				<h2>Date Selection: </h2>
@@ -36,7 +40,7 @@
 				<input type="submit" name="Submit">
 			</div>
 			<img src ="../img/keyboard.jpg" alt="Image of Onscreen Keyboard"/>
-			
+
 		</form>
 
 	</div>

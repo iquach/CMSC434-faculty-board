@@ -1,3 +1,6 @@
+body,html {
+	font-family: 'Nanum Gothic', sans-serif;
+}
 #sidebar {
     position: fixed;
     top: 0%;
@@ -9,13 +12,11 @@
 
 #time {
 	font-size: 3em;
-	font-family: sans-serif;
 	text-align: center;
 }
 
 #date {
 	font-size: 2em;
-	font-family: sans-serif;
 	margin-left: 15%;
 	margin-right: 20%;
 }
@@ -34,7 +35,6 @@
 	border-top: 3px solid white;
 	border-bottom: 3px solid white;
 	margin-bottom: 10px;
-	font-family: sans-serif;
 }
 
 .fill-div {
@@ -52,7 +52,6 @@
 a,u {
 	text-decoration: none;
 	font-size: 3em;
-	font-family: sans-serif;
 }
 
 a:link {

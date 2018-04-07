@@ -1,7 +1,17 @@
+html, body {
+	overflow-y: hidden;
+	font-family: 'Nanum Gothic', sans-serif;
+	color: white;
+
+}
+
 a {
 	text-decoration: none;
 	font-size: 1em;
-	font-family: sans-serif;
+}
+
+#submission {
+	padding-bottom: 2%;
 }
 
 #back {
@@ -41,11 +51,6 @@ a:active {
 body {
 	background: #41A3D2  ;
 	text-align: center;
-	font-family: sans-serif;
-}
-
-h1 {
-	font-family: sans-serif;
 }
 
 .horiz {

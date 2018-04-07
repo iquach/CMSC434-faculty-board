@@ -25,17 +25,17 @@
 				<span id="queueMessage" style="font-size:180%; align:center">Queue: <span id="queue">5</span> visitors</span>
 				<br>
 				<span style="padding:30px">
-				<span style="font-size:120%"><button id="decrement" onclick="decrementQ()">-</button></span> Modify Count 
+				<span style="font-size:120%"><button id="decrement" onclick="decrementQ()">-</button></span> Modify Count
 				<span style="font-size: 1.2em">
 					<button id="increment" onclick="incrementQ()">+</button>
 				</span>
 			</span>
 			</div>
-			
+
 		</ul>
 	</div>
 	<div class="navbar">
-		<span class="cont" id="makeRoom">Make room 
+		<span class="cont" id="makeRoom">Make room
 			<!-- Make this select prettier!! incrase size? -->
 			<select onchange="changeRoom(this.value)">
 				<option value="Open">Open</option>
@@ -54,7 +54,7 @@
 		<a class="fill-div center-link"> <i class=" fas fa-calendar-check"></i><br>Appointments <br><br>
 			<span style="font-size: .7em; "><input type="checkbox" name="option2" value="Appointment"> Allow visitors to set appointments</span>
 		</a>
-	</div>	
+	</div>
 	<div class="bl">
 		<a class="fill-div center-link" ><i class=" fas fa-envelope"></i> <br>Messages<br><br>
 			<span style="font-size: .7em; "><input type="checkbox" name="option2" value="Appointment"> Allow visitors to leave messages</span>
@@ -66,17 +66,17 @@
 				<span id="descriptionOfFiles" style="font-size: .5em; "><i>No files or text announcements uploaded</i></span><br>
 				<!--Currently: __.jpg uploaded as '__'  <br> -->
 				<!--form action="subpages/uploadFile.html"-->
-				<button id="uploadFileButton">Upload new file</button> 
+				<button id="uploadFileButton">Upload new file</button>
 				<!--/form-->
 				<!-- The Modal -->
 				<div id="myModal2" class="modal2">
 					<!-- Modal content -->
 					<div class="modal-contentB">
 						<span class="close2">&times;</span>
-						<span style="color:black"> 
-							Create a new announcement <br> <br> 
-							Announcement name: 
-							<input id="fileName" name="submitName" type="susbmit" value="ex: 'Announcement 3/18'"> 
+						<span style="color:black">
+							Create a new announcement <br> <br>
+							Announcement name:
+							<input id="fileName" name="submitName" type="susbmit" value="ex: 'Announcement 3/18'">
 							<br><br>
 							<div align="center">
 								<div id="summernote"><p></p></div></div>
@@ -88,13 +88,13 @@
 									});
 								});
 								</script>
-								<br><button id="postAnn">Post Announcement</button> 
+								<br><button id="postAnn">Post Announcement</button>
 								<p id="annUploadConfirmation"></p>
 							</span>
 						</div>
 					</div>
 					<br>
-					<button id="createAnnButton">Create a new text post announcement</button> 
+					<button id="createAnnButton">Create a new text post announcement</button>
 					<div id="myModal" class="modal">
 						<!-- Modal content -->
 						<div class="modal-content">
@@ -102,7 +102,7 @@
 							<span style="color:black"> Upload a file to display <br><br>
 								<input name="myFile" id="newFile" type="file"><br> <br>
 								File name to be displayed to visitors: <input id="fileName" name="submitName" type="susbmit" value="ex: 'Daily Comic'"> <br><br>
-								<button id="saveNewFile">Save Changes</button> 
+								<button id="saveNewFile">Save Changes</button>
 								<p id="fileUploadConfirmation"></p>
 							</span>
 						</div>
@@ -125,7 +125,7 @@
 	var span2 = document.getElementsByClassName("close2")[0];
 	// need second one?
 
-	// When the user clicks the button, open the modal 
+	// When the user clicks the button, open the modal
 	btn.onclick = function() {
 		modal.style.display = "block";
 	}
@@ -151,7 +151,7 @@
 		}
 
 	}
-	//Changes the tob bar color 
+	//Changes the tob bar color
 	function changeRoom(status){
 		if(status == "Open"){
 			document.getElementById('roomStatus').style.cssText = 'background-color:#28B463	';
@@ -171,9 +171,9 @@
 			document.getElementById('roomStatus').innerHTML = "Room Status: Out of Office"
 		}
 	}
-	//Decerements the queue 
+	//Decerements the queue
 	function decrementQ(){
-		val = document.getElementById('queue').innerHTML; 
+		val = document.getElementById('queue').innerHTML;
 		if(val >0){
 			val--
 			document.getElementById('queue').innerHTML = val;
@@ -182,11 +182,11 @@
 	}
 
 	function incrementQ() {
-		val = document.getElementById('queue').innerHTML; 
+		val = document.getElementById('queue').innerHTML;
 		val++;
 		document.getElementById('queue').innerHTML = val;
 		document.getElementById('queue2').innerHTML = val;
-		
+
 	}
 
 	//Get the button that saves the new file info
@@ -205,7 +205,7 @@
 
 
 	</script>
-	
+
 
 
 </body>

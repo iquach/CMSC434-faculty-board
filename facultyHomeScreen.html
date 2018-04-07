@@ -6,6 +6,8 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-lite.css" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-lite.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
 </head>
 <body>
 	<div id="sidebar">
@@ -15,17 +17,19 @@
 		<p id="time" class="white">Welcome, Dilbert Dilbertson!</p>
 		<p id="time" class="white">Logout</p>
 		<ul>
-			<li><a class="active" href="facultyHomeScreen.html">Home</a></li>
-			<li><a href="subpages/messages.html">View Messages (1)</a></li>
-			<li><a href="index.html">View Current Visitor Display</a></li>
-			<li><a href="subpages/linkCalendarPage.html">Upload Schedule and Link Calendar</a></li>
+			<li><a class="active" href="facultyHomeScreen.html"><i class=" fas fa-home" style="font-size: 1.50em;"></i> Home</a></li>
+			<li><a href="subpages/messages.html"><i class=" fas fa-envelope" style="font-size: 1.50em"></i> View Messages (1)</a></li>
+			<li><a href="index.html"><i class=" fas fa-eye" style="font-size: 1.50em"></i> View Current Visitor Display</a></li>
+			<li><a href="subpages/linkCalendarPage.html"><i class=" fas fa-calendar-alt" style="font-size: 1.50em"></i> Upload Schedule &amp Link Calendar</a></li>
 			<div id="queueSpace">
-				<span id="queueMessage" style="font-size:180%">Queue: <span id="queue">5</span> visitors</span>
+				<span id="queueMessage" style="font-size:180%; align:center">Queue: <span id="queue">5</span> visitors</span>
 				<br>
-				<span style="font-size:120%"><button id="decrement" onclick="decrementQ()">-</button>Modify Count</span>
+				<span style="padding:30px">
+				<span style="font-size:120%"><button id="decrement" onclick="decrementQ()">-</button></span> Modify Count 
 				<span style="font-size: 1.2em">
 					<button id="increment" onclick="incrementQ()">+</button>
 				</span>
+			</span>
 			</div>
 			
 		</ul>
@@ -44,15 +48,15 @@
 		<span class="cont" id="roomStatus" style="float:left; text-align: left">Room Status: Busy</span>
 	</div>
 	<div class="tl">
-		<a class="fill-div center-link">There are <span id="queue2">5</span> Visitors Outside<br> (in the Queue)</a>
+		<a class="fill-div center-link"><i class=" fas fa-check-square"></i><br>There are <span id="queue2">5</span> Visitors Outside<br> (in the Queue)</a>
 	</div>
 	<div class="tr">
-		<a class="fill-div center-link"> Appointments <br><br>
+		<a class="fill-div center-link"> <i class=" fas fa-calendar-check"></i><br>Appointments <br><br>
 			<input type="checkbox" name="option2" value="Appointment"> Allow visitors to set appointments
 		</a>
 	</div>	
 	<div class="bl">
-		<a class="fill-div center-link">Messages<br><br>
+		<a class="fill-div center-link"><i class=" fas fa-envelope"></i> <br>Messages<br><br>
 			<input type="checkbox" name="option2" value="Appointment"> Allow visitors to leave messages
 		</a>
 	</div>
@@ -107,7 +111,7 @@
 			</a>
 		</div>
 		<br><br><br>
-<script>
+		<script>
 	// Get the modal
 	var modal = document.getElementById('myModal');
 	var modal2 = document.getElementById('myModal2');
@@ -200,7 +204,7 @@
 	}
 
 
-</script>
+	</script>
 	
 
 

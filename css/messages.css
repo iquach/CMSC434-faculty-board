@@ -6,9 +6,30 @@ h1{
 	text-align: center;
 }
 
+h2 {
+  padding-left: 2%;
+}
+
+#message {
+  padding: 2%;
+
+}
+
+#sidebar {
+  font-color: white;
+}
+
+#messagearea {
+  color: black;
+}
+
+#respond {
+  
+}
+
 div.info{
   text-align: center;
-  font-size: 2em;
+  font-size: 1em;
 }
 .name{
   height: 2em;
@@ -26,6 +47,35 @@ div.header{
 div.message{
   text-align: center;
   font-size: 2em;
+}
+
+/* Split the screen at a certain percentage */
+.split {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    margin-top: 2%;
+}
+
+/* Control the left side */
+.left {
+    width: 25%;
+    margin-left: 10%;
+    background-color: #28B463;
+    text-align: center;
+    height: 80vh;
+}
+
+/* Control the right side */
+.right {
+    width: 64%;
+    right: 1%;
+    background-color: white;
+    height: 80vh;
+    border-left: 1px solid black;
+
 }
 
 body {

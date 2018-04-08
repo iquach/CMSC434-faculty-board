@@ -12,45 +12,53 @@
     <a style="text-align:left; float:left;" class="backbtn" href="../facultyHomeScreen.html"><i class="fas fa-arrow-left"></i></a>
 </div>
 
-<h1>Left Messages</h1>
-<div class="info">
-    Name: Lady Gaga <br>
-    Email: lgaga@gmail.com
-</div>
-<br>
-<div class="header">
-    Message
-</div>
-<br>
-<div class="white-box">
-You weren't in your office when lunch came, so pick them up from Josh.
-</div>
-<br>
-<form action="mailto:ladygaga@gmail.com">
-    <center>
-        <input type="submit" value="Respond via Email">
-    </center>
-</form>
-<hr>
+<div class="split left" id="sidebar">
+    <h1>Left Messages</h1>
+    <div class="entry">
+        <hr>
+        <div style="cursor: pointer;" class="info" onclick="gaga()">
+        <p>Email: lgaga@gmail.com</p>
+        
+        <hr>
+    </div>
+    <div>
+        <div style="cursor: pointer;" class="info" onclick="patrick()">
+        <p>Email: pat@star.com</p>
+        <hr>
+    </div>
 
-<div class="info">
-    Name: Dil Bert <br>
-    Email: bert@gmail.com
+    
+    </div>
 </div>
-<br>
-<div class="header">
-    Message
-</div>
-<br>
-<div class="white-box">
-Message to self: Don't order the spagete
-</div>
-<br>
-<form action="mailto:bert@gmail.com">
-    <center>
-        <input type="submit" value="Respond via Email">
-    </center>
-</form>
 
+<div class="split right">
+    <div id="messagearea">
+        <h2 id="sender">From: Lady Gaga</h2>
+        <h2>To: dilbert@umd.edu</h2>
+        <hr>
+        <p id="message">You weren't in your office when lunch came, so pick them up from Josh.</p>
+        <form action="mailto:ladygaga@gmail.com" id="respond">
+            <center>
+                <input type="submit" value="Respond via Email">
+            </center>
+        </form>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    function gaga() {
+        document.getElementById('sender').innerHTML = "From: lgaga@gmail.com";
+        document.getElementById('respond').setAttribute("action", "mailto:lgaga@gmail.com");
+        document.getElementById('message').innerHTML = "You weren't in your office when lunch came, so pick them up from Josh.";
+    }
+
+
+    function patrick() {
+        document.getElementById('sender').innerHTML = "From: pat@star.com";
+        document.getElementById('message').innerHTML = "Let's go jellyfish hunting!";
+        document.getElementById('respond').setAttribute("action", "mailto:pat@star.com");
+    }
+</script>
 </body>
 </html>

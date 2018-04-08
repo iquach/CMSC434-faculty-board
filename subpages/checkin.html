@@ -34,5 +34,23 @@
     <img src ="../img/keyboard.jpg" alt="Image of Onscreen Keyboard"/>
 
   </form>
+
+  <script>
+    var inactivityTime = function () {
+      var t;
+      window.onload = resetTimer;
+      // DOM Events
+      document.onmousemove = resetTimer;
+      document.onkeypress = resetTimer;
+
+      function resetTimer() {
+          clearTimeout(t);
+          t = setTimeout('history.go(-1)', 10000)
+          // 1000 milisec = 1 sec
+      }
+    };
+    inactivityTime();
+  </script>
+
 </body>
 </html>

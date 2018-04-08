@@ -24,7 +24,7 @@ h2 {
 }
 
 #respond {
-  
+
 }
 
 div.info{
@@ -65,15 +65,15 @@ div.message{
     margin-left: 10%;
     background-color: #28B463;
     text-align: center;
-    height: 80vh;
+    height: 92%;
 }
 
 /* Control the right side */
 .right {
     width: 64%;
-    right: 1%;
+    right: 2%;
     background-color: white;
-    height: 80vh;
+    height: 92%;
     border-left: 1px solid black;
 
 }

@@ -17,13 +17,13 @@
     <div class="entry">
         <hr>
         <div style="cursor: pointer;" class="info" onclick="gaga()">
-        <p>Message From: lgaga@gmail.com</p>
+        <p>Message From: ivan@umd.edu</p>
         
         <hr>
     </div>
     <div>
         <div style="cursor: pointer;" class="info" onclick="patrick()">
-        <p>Message From: pat@star.com</p>
+        <p>Message From: rose@umd.edu</p>
         <hr>
     </div>
 
@@ -33,11 +33,11 @@
 
 <div class="split right">
     <div id="messagearea">
-        <h2 id="sender">From: Lady Gaga</h2>
-        <h2>To: dilbert@umd.edu</h2>
+        <h2 id="sender">From: Ivan Quach</h2>
+        <h2>To: egolub@glue.umd.edu</h2>
         <hr>
-        <p id="message">You weren't in your office when lunch came, so pick them up from Josh.</p>
-        <form action="mailto:ladygaga@gmail.com" id="respond">
+        <p id="message">I'm requesting an extension on the project.</p>
+        <form action="mailto:ivan@umd.edu" id="respond">
             <center>
                 <input type="submit" value="Respond via Email">
             </center>
@@ -48,16 +48,16 @@
 
 <script type="text/javascript">
     function gaga() {
-        document.getElementById('sender').innerHTML = "From: Lady Gaga";
-        document.getElementById('respond').setAttribute("action", "mailto:lgaga@gmail.com");
-        document.getElementById('message').innerHTML = "You weren't in your office when lunch came, so pick them up from Josh.";
+        document.getElementById('sender').innerHTML = "From: Ivan Quach";
+        document.getElementById('respond').setAttribute("action", "mailto:ivan@umd.edu");
+        document.getElementById('message').innerHTML = "I'm requesting an extension on the project.";
     }
 
 
     function patrick() {
-        document.getElementById('sender').innerHTML = "From: Patrick Star";
-        document.getElementById('message').innerHTML = "Let's go jellyfish hunting!";
-        document.getElementById('respond').setAttribute("action", "mailto:pat@star.com");
+        document.getElementById('sender').innerHTML = "From: Rose Garay";
+        document.getElementById('message').innerHTML = "I had some questions about the midterm we took last week.";
+        document.getElementById('respond').setAttribute("action", "mailto:rose@umd.edu");
     }
 </script>
 </body>
